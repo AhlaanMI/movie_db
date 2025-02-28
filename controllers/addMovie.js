@@ -56,7 +56,7 @@ const addMovie = (req, res) => {
     });
 
     fs.writeFile("./movies.json", JSON.stringify(moviesData), (err, data) => {
-      // If reading fails
+      // If reading failss
       if (err) {
         res.status(400).json({
           status: "failed",
